@@ -20,7 +20,7 @@ const WaterPurifier = () => {
 
         try{
              const body = { name , mobile , city , product };
-             const response = await fetch("http://localhost:5000/enquiers", {
+             const response = await fetch("/enquiers", {
                method:"POST",
                headers: { "Content-Type": "application/json" },
                body: JSON.stringify(body)
